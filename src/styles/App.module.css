@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.wrapper .boardingPass {
+.boardingPass {
   width: 20.5rem;
 
   display: flex;
@@ -16,13 +16,23 @@
 }
 
 .boardingPass .ticket {
-  background: var(--white);
-
-  border-radius: 1.5rem;
-  height: 11.9rem;
+  color: #000;
 }
 
-.boardingPass header {
+.boardingPass .ticket header {
+  background: var(--white);
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}
+
+.boardingPass .ticket .passager {
+  background: var(--white);
+  border: 1px dashed rgba(0, 0, 0, 0.32);
+  padding: 24px 32px;
+}
+
+/* HEADER AND FOOTER CARD */
+.boardingPass > header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +43,8 @@
   line-height: 1.5;
   font-size: 1.25rem;
 }
-.boardingPass footer {
+
+.boardingPass > footer {
   opacity: 0.64;
   color: var(--white);
   text-align: center;

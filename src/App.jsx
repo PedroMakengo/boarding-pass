@@ -1,3 +1,6 @@
+import { FlighInfo } from "./components/FlighInfo";
+import { PassangerInfo } from "./components/PassangerInfo";
+
 import styles from "./styles/App.module.css";
 
 export function App() {
@@ -8,7 +11,12 @@ export function App() {
           <span>Cartão de embarque</span>
         </header>
         <article className={styles.ticket}>
-          <h1>Ticket</h1>
+          <header>
+            <FlighInfo />
+          </header>
+          <div className={styles.passager}>
+            <PassangerInfo />
+          </div>
         </article>
         <footer>
           <p>

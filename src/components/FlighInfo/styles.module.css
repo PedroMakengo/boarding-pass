@@ -1,0 +1,73 @@
+.flighInfo {
+  padding: 24px 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.flighInfo header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data span,
+.voo span {
+  display: block;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.data time,
+.voo strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+
+  line-height: 1.185;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.data span {
+  text-align: right;
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2.5rem 1fr;
+
+  align-items: center;
+}
+
+.endCity,
+.goCity {
+  display: flex;
+  flex-direction: column;
+}
+
+.endCity span,
+.goCity span {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.endCity strong,
+.goCity strong {
+  font-size: 2.5rem;
+}
+
+.endCity time,
+.goCity time {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  line-height: 1.18;
+}
+
+.endCity {
+  display: flex;
+  align-items: flex-end;
+}
