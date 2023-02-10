@@ -1,10 +1,12 @@
 .wrapper {
-  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+  background: linear-gradient(182.96deg, #8257e5 60%, #271a45 100%);
   height: 100vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
 }
 
 .boardingPass {
@@ -27,8 +29,17 @@
 
 .boardingPass .ticket .passager {
   background: var(--white);
-  border: 1px dashed rgba(0, 0, 0, 0.32);
-  padding: 24px 32px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.32);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.32);
+  padding: 1.5rem 2rem;
+}
+
+.boardingPass .ticket .booardingInfo {
+  background: var(--white);
+  padding: 1.5rem 2rem;
+
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
 /* HEADER AND FOOTER CARD */
