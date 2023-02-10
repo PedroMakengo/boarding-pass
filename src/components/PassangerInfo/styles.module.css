@@ -1,28 +1,13 @@
 .passagerInfo {
   display: flex;
   justify-content: space-between;
-}
+  border-top: 1px dashed rgba(0, 0, 0, 0.32);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.32);
 
-.passagerInfo:before,
-.passagerInfo:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: calc(100vh - 442px);
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  z-index: 2;
-}
+  padding: 1rem;
 
-.passagerInfo:before {
-  background: #8257e5;
-  transform: translateX(-3rem);
-}
-
-.passagerInfo:after {
-  background: var(--violet-100);
-  transform: translateX(17.9rem);
+  width: 91%;
+  margin: 0 auto;
 }
 
 .passagerInfo span {
